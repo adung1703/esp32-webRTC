@@ -1,0 +1,2 @@
+/home/thien-gay/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp32-elf-ar qc libespressif__esp_audio_codec.a CMakeFiles/__idf_espressif__esp_audio_codec.dir/src/audio_decoder_reg.c.obj CMakeFiles/__idf_espressif__esp_audio_codec.dir/src/audio_encoder_reg.c.obj CMakeFiles/__idf_espressif__esp_audio_codec.dir/src/simple_decoder_reg.c.obj
+/home/thien-gay/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp32-elf-ranlib libespressif__esp_audio_codec.a

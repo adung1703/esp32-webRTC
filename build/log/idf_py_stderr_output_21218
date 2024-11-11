@@ -1,0 +1,225 @@
+CMake Warning at /home/thien-gay/esp-idf/esp-idf/tools/cmake/git_submodules.cmake:52 (message):
+  Git submodule components/esp_wifi/lib is out of date.  Run 'git submodule
+  update --init --recursive' to fix.
+Call Stack (most recent call first):
+  /home/thien-gay/esp-idf/esp-idf/tools/cmake/build.cmake:80 (git_submodule_check)
+  /home/thien-gay/esp-idf/esp-idf/tools/cmake/build.cmake:242 (__build_get_idf_git_revision)
+  /home/thien-gay/esp-idf/esp-idf/tools/cmake/idf.cmake:52 (__build_init)
+  /home/thien-gay/esp-idf/esp-idf/tools/cmake/project.cmake:29 (include)
+  CMakeLists.txt:5 (include)
+
+
+CMake Deprecation Warning at components/libpeer/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.5 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+CMake Warning at /home/thien-gay/esp-idf/esp-idf/tools/cmake/git_submodules.cmake:52 (message):
+  Git submodule components/esp_wifi/lib is out of date.  Run 'git submodule
+  update --init --recursive' to fix.
+Call Stack (most recent call first):
+  /home/thien-gay/esp-idf/esp-idf/tools/cmake/build.cmake:80 (git_submodule_check)
+  /home/thien-gay/esp-idf/esp-idf/tools/cmake/build.cmake:242 (__build_get_idf_git_revision)
+  /home/thien-gay/esp-idf/esp-idf/tools/cmake/idf.cmake:52 (__build_init)
+  /home/thien-gay/esp-idf/esp-idf/tools/cmake/project.cmake:29 (include)
+  CMakeLists.txt:61 (include)
+
+
+/home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__srtp/libsrtp/srtp/srtp.c: In function 'srtp_kdf_generate':
+/home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__srtp/libsrtp/srtp/srtp.c:730:52: warning: passing argument 3 of 'srtp_cipher_encrypt' from incompatible pointer type [-Wincompatible-pointer-types]
+  730 |     status = srtp_cipher_encrypt(kdf->cipher, key, &length);
+      |                                                    ^~~~~~~
+      |                                                    |
+      |                                                    unsigned int *
+In file included from /home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__srtp/libsrtp/include/srtp_priv.h:55,
+                 from /home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__srtp/libsrtp/srtp/srtp.c:48:
+/home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__srtp/libsrtp/crypto/include/cipher.h:223:49: note: expected 'uint32_t *' {aka 'long unsigned int *'} but argument is of type 'unsigned int *'
+  223 |                                       uint32_t *num_octets_to_output);
+      |                                       ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+/home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__srtp/libsrtp/srtp/srtp.c: In function 'srtp_protect_aead':
+/home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__srtp/libsrtp/srtp/srtp.c:1811:34: warning: passing argument 3 of 'srtp_cipher_encrypt' from incompatible pointer type [-Wincompatible-pointer-types]
+ 1811 |                                  (unsigned int *)&enc_octet_len);
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                  |
+      |                                  unsigned int *
+/home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__srtp/libsrtp/crypto/include/cipher.h:223:49: note: expected 'uint32_t *' {aka 'long unsigned int *'} but argument is of type 'unsigned int *'
+  223 |                                       uint32_t *num_octets_to_output);
+      |                                       ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+/home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__srtp/libsrtp/srtp/srtp.c: In function 'srtp_unprotect_aead':
+/home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__srtp/libsrtp/srtp/srtp.c:1957:34: warning: passing argument 3 of 'srtp_cipher_decrypt' from incompatible pointer type [-Wincompatible-pointer-types]
+ 1957 |                                  &enc_octet_len);
+      |                                  ^~~~~~~~~~~~~~
+      |                                  |
+      |                                  unsigned int *
+/home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__srtp/libsrtp/crypto/include/cipher.h:226:49: note: expected 'uint32_t *' {aka 'long unsigned int *'} but argument is of type 'unsigned int *'
+  226 |                                       uint32_t *num_octets_to_output);
+      |                                       ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+/home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__srtp/libsrtp/srtp/srtp.c: In function 'srtp_protect_mki':
+/home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__srtp/libsrtp/srtp/srtp.c:2319:33: warning: passing argument 3 of 'srtp_cipher_encrypt' from incompatible pointer type [-Wincompatible-pointer-types]
+ 2319 |                                 (unsigned int *)&enc_octet_len);
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                 |
+      |                                 unsigned int *
+/home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__srtp/libsrtp/crypto/include/cipher.h:223:49: note: expected 'uint32_t *' {aka 'long unsigned int *'} but argument is of type 'unsigned int *'
+  223 |                                       uint32_t *num_octets_to_output);
+      |                                       ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+/home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__srtp/libsrtp/srtp/srtp.c: In function 'srtp_unprotect_mki':
+/home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__srtp/libsrtp/srtp/srtp.c:2652:60: warning: passing argument 3 of 'srtp_cipher_decrypt' from incompatible pointer type [-Wincompatible-pointer-types]
+ 2652 |                                      (uint8_t *)enc_start, &enc_octet_len);
+      |                                                            ^~~~~~~~~~~~~~
+      |                                                            |
+      |                                                            unsigned int *
+/home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__srtp/libsrtp/crypto/include/cipher.h:226:49: note: expected 'uint32_t *' {aka 'long unsigned int *'} but argument is of type 'unsigned int *'
+  226 |                                       uint32_t *num_octets_to_output);
+      |                                       ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+/home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__srtp/libsrtp/srtp/srtp.c: In function 'srtp_protect_rtcp_aead':
+/home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__srtp/libsrtp/srtp/srtp.c:3610:60: warning: passing argument 3 of 'srtp_cipher_encrypt' from incompatible pointer type [-Wincompatible-pointer-types]
+ 3610 |                                      (uint8_t *)enc_start, &enc_octet_len);
+      |                                                            ^~~~~~~~~~~~~~
+      |                                                            |
+      |                                                            unsigned int *
+/home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__srtp/libsrtp/crypto/include/cipher.h:223:49: note: expected 'uint32_t *' {aka 'long unsigned int *'} but argument is of type 'unsigned int *'
+  223 |                                       uint32_t *num_octets_to_output);
+      |                                       ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+/home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__srtp/libsrtp/srtp/srtp.c:3629:71: warning: passing argument 3 of 'srtp_cipher_encrypt' from incompatible pointer type [-Wincompatible-pointer-types]
+ 3629 |         status = srtp_cipher_encrypt(session_keys->rtcp_cipher, NULL, &nolen);
+      |                                                                       ^~~~~~
+      |                                                                       |
+      |                                                                       unsigned int *
+/home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__srtp/libsrtp/crypto/include/cipher.h:223:49: note: expected 'uint32_t *' {aka 'long unsigned int *'} but argument is of type 'unsigned int *'
+  223 |                                       uint32_t *num_octets_to_output);
+      |                                       ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+/home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__srtp/libsrtp/srtp/srtp.c: In function 'srtp_unprotect_rtcp_aead':
+/home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__srtp/libsrtp/srtp/srtp.c:3779:60: warning: passing argument 3 of 'srtp_cipher_decrypt' from incompatible pointer type [-Wincompatible-pointer-types]
+ 3779 |                                      (uint8_t *)enc_start, &enc_octet_len);
+      |                                                            ^~~~~~~~~~~~~~
+      |                                                            |
+      |                                                            unsigned int *
+/home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__srtp/libsrtp/crypto/include/cipher.h:226:49: note: expected 'uint32_t *' {aka 'long unsigned int *'} but argument is of type 'unsigned int *'
+  226 |                                       uint32_t *num_octets_to_output);
+      |                                       ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+/home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__srtp/libsrtp/srtp/srtp.c:3789:59: warning: passing argument 3 of 'srtp_cipher_decrypt' from incompatible pointer type [-Wincompatible-pointer-types]
+ 3789 |                                      (uint8_t *)auth_tag, &tmp_len);
+      |                                                           ^~~~~~~~
+      |                                                           |
+      |                                                           unsigned int *
+/home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__srtp/libsrtp/crypto/include/cipher.h:226:49: note: expected 'uint32_t *' {aka 'long unsigned int *'} but argument is of type 'unsigned int *'
+  226 |                                       uint32_t *num_octets_to_output);
+      |                                       ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+/home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__srtp/libsrtp/srtp/srtp.c: In function 'srtp_protect_rtcp_mki':
+/home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__srtp/libsrtp/srtp/srtp.c:4053:60: warning: passing argument 3 of 'srtp_cipher_encrypt' from incompatible pointer type [-Wincompatible-pointer-types]
+ 4053 |                                      (uint8_t *)enc_start, &enc_octet_len);
+      |                                                            ^~~~~~~~~~~~~~
+      |                                                            |
+      |                                                            unsigned int *
+/home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__srtp/libsrtp/crypto/include/cipher.h:223:49: note: expected 'uint32_t *' {aka 'long unsigned int *'} but argument is of type 'unsigned int *'
+  223 |                                       uint32_t *num_octets_to_output);
+      |                                       ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+/home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__srtp/libsrtp/srtp/srtp.c: In function 'srtp_unprotect_rtcp_mki':
+/home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__srtp/libsrtp/srtp/srtp.c:4334:60: warning: passing argument 3 of 'srtp_cipher_decrypt' from incompatible pointer type [-Wincompatible-pointer-types]
+ 4334 |                                      (uint8_t *)enc_start, &enc_octet_len);
+      |                                                            ^~~~~~~~~~~~~~
+      |                                                            |
+      |                                                            unsigned int *
+/home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__srtp/libsrtp/crypto/include/cipher.h:226:49: note: expected 'uint32_t *' {aka 'long unsigned int *'} but argument is of type 'unsigned int *'
+  226 |                                       uint32_t *num_octets_to_output);
+      |                                       ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+/home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__srtp/libsrtp/crypto/cipher/cipher.c: In function 'srtp_cipher_output':
+/home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__srtp/libsrtp/crypto/cipher/cipher.c:108:56: warning: passing argument 3 of 'c->type->encrypt' from incompatible pointer type [-Wincompatible-pointer-types]
+  108 |     return (((c)->type)->encrypt(((c)->state), buffer, num_octets_to_output));
+      |                                                        ^~~~~~~~~~~~~~~~~~~~
+      |                                                        |
+      |                                                        uint32_t * {aka long unsigned int *}
+/home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__srtp/libsrtp/crypto/cipher/cipher.c:108:56: note: expected 'unsigned int *' but argument is of type 'uint32_t *' {aka 'long unsigned int *'}
+/home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__srtp/libsrtp/crypto/cipher/cipher.c: In function 'srtp_cipher_encrypt':
+/home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__srtp/libsrtp/crypto/cipher/cipher.c:119:56: warning: passing argument 3 of 'c->type->encrypt' from incompatible pointer type [-Wincompatible-pointer-types]
+  119 |     return (((c)->type)->encrypt(((c)->state), buffer, num_octets_to_output));
+      |                                                        ^~~~~~~~~~~~~~~~~~~~
+      |                                                        |
+      |                                                        uint32_t * {aka long unsigned int *}
+/home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__srtp/libsrtp/crypto/cipher/cipher.c:119:56: note: expected 'unsigned int *' but argument is of type 'uint32_t *' {aka 'long unsigned int *'}
+/home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__srtp/libsrtp/crypto/cipher/cipher.c: In function 'srtp_cipher_decrypt':
+/home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__srtp/libsrtp/crypto/cipher/cipher.c:130:56: warning: passing argument 3 of 'c->type->decrypt' from incompatible pointer type [-Wincompatible-pointer-types]
+  130 |     return (((c)->type)->decrypt(((c)->state), buffer, num_octets_to_output));
+      |                                                        ^~~~~~~~~~~~~~~~~~~~
+      |                                                        |
+      |                                                        uint32_t * {aka long unsigned int *}
+/home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__srtp/libsrtp/crypto/cipher/cipher.c:130:56: note: expected 'unsigned int *' but argument is of type 'uint32_t *' {aka 'long unsigned int *'}
+/home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__srtp/libsrtp/crypto/cipher/cipher.c: In function 'srtp_cipher_type_test':
+/home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__srtp/libsrtp/crypto/cipher/cipher.c:297:49: warning: passing argument 3 of 'srtp_cipher_encrypt' from incompatible pointer type [-Wincompatible-pointer-types]
+  297 |         status = srtp_cipher_encrypt(c, buffer, &len);
+      |                                                 ^~~~
+      |                                                 |
+      |                                                 unsigned int *
+/home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__srtp/libsrtp/crypto/cipher/cipher.c:113:49: note: expected 'uint32_t *' {aka 'long unsigned int *'} but argument is of type 'unsigned int *'
+  113 |                                       uint32_t *num_octets_to_output)
+      |                                       ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+/home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__srtp/libsrtp/crypto/cipher/cipher.c:398:49: warning: passing argument 3 of 'srtp_cipher_decrypt' from incompatible pointer type [-Wincompatible-pointer-types]
+  398 |         status = srtp_cipher_decrypt(c, buffer, &len);
+      |                                                 ^~~~
+      |                                                 |
+      |                                                 unsigned int *
+/home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__srtp/libsrtp/crypto/cipher/cipher.c:124:49: note: expected 'uint32_t *' {aka 'long unsigned int *'} but argument is of type 'unsigned int *'
+  124 |                                       uint32_t *num_octets_to_output)
+      |                                       ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+/home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__srtp/libsrtp/crypto/cipher/cipher.c:520:49: warning: passing argument 3 of 'srtp_cipher_encrypt' from incompatible pointer type [-Wincompatible-pointer-types]
+  520 |         status = srtp_cipher_encrypt(c, buffer, &length);
+      |                                                 ^~~~~~~
+      |                                                 |
+      |                                                 unsigned int *
+/home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__srtp/libsrtp/crypto/cipher/cipher.c:113:49: note: expected 'uint32_t *' {aka 'long unsigned int *'} but argument is of type 'unsigned int *'
+  113 |                                       uint32_t *num_octets_to_output)
+      |                                       ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+/home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__srtp/libsrtp/crypto/cipher/cipher.c:570:49: warning: passing argument 3 of 'srtp_cipher_decrypt' from incompatible pointer type [-Wincompatible-pointer-types]
+  570 |         status = srtp_cipher_decrypt(c, buffer, &length);
+      |                                                 ^~~~~~~
+      |                                                 |
+      |                                                 unsigned int *
+/home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__srtp/libsrtp/crypto/cipher/cipher.c:124:49: note: expected 'uint32_t *' {aka 'long unsigned int *'} but argument is of type 'unsigned int *'
+  124 |                                       uint32_t *num_octets_to_output)
+      |                                       ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+/home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__srtp/libsrtp/crypto/cipher/cipher.c: In function 'srtp_cipher_bits_per_second':
+/home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__srtp/libsrtp/crypto/cipher/cipher.c:649:45: warning: passing argument 3 of 'srtp_cipher_encrypt' from incompatible pointer type [-Wincompatible-pointer-types]
+  649 |         if (srtp_cipher_encrypt(c, enc_buf, &len) != srtp_err_status_ok) {
+      |                                             ^~~~
+      |                                             |
+      |                                             unsigned int *
+/home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__srtp/libsrtp/crypto/cipher/cipher.c:113:49: note: expected 'uint32_t *' {aka 'long unsigned int *'} but argument is of type 'unsigned int *'
+  113 |                                       uint32_t *num_octets_to_output)
+      |                                       ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+/home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__usrsctp/usrsctplib/netinet/sctp_input.c: In function 'sctp_handle_stream_reset_response':
+/home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__usrsctp/usrsctplib/netinet/sctp_input.c:3866:99: warning: taking address of packed member of 'struct sctp_stream_reset_out_request' may result in an unaligned pointer value [-Waddress-of-packed-member]
+ 3866 |                                         sctp_reset_out_streams(stcb, number_entries, req_out_param->list_of_streams);
+      |                                                                                      ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+/home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__usrsctp/usrsctplib/netinet/sctp_input.c:3879:101: warning: taking address of packed member of 'struct sctp_stream_reset_out_request' may result in an unaligned pointer value [-Waddress-of-packed-member]
+ 3879 |                                         sctp_reset_clear_pending(stcb, number_entries, req_out_param->list_of_streams);
+      |                                                                                        ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+/home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__usrsctp/usrsctplib/netinet/sctp_input.c: In function 'sctp_handle_str_reset_request_out':
+/home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__usrsctp/usrsctplib/netinet/sctp_input.c:4151:71: warning: taking address of packed member of 'struct sctp_stream_reset_out_request' may result in an unaligned pointer value [-Waddress-of-packed-member]
+ 4151 |                         sctp_reset_in_stream(stcb, number_entries, req->list_of_streams);
+      |                                                                    ~~~^~~~~~~~~~~~~~~~~
+/home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__usrsctp/usrsctplib/netinet/sctp_output.c: In function 'send_forward_tsn':
+/home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__usrsctp/usrsctplib/netinet/sctp_output.c:11111:36: warning: converting a packed 'struct sctp_forward_tsn_chunk' pointer (alignment 1) to a 'struct sctp_strseq_mid' pointer (alignment 4) may result in an unaligned pointer value [-Waddress-of-packed-member]
+11111 |                 strseq_m = (struct sctp_strseq_mid *)fwdtsn;
+      |                                    ^~~~~~~~~~~~~~~
+In file included from /home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__usrsctp/usrsctplib/netinet/sctp_output.c:41:
+/home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__usrsctp/usrsctplib/netinet/sctp_header.h:390:8: note: defined here
+  390 | struct sctp_forward_tsn_chunk {
+      |        ^~~~~~~~~~~~~~~~~~~~~~
+/home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__usrsctp/usrsctplib/netinet/sctp_header.h:401:8: note: defined here
+  401 | struct sctp_strseq_mid {
+      |        ^~~~~~~~~~~~~~~
+/home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__usrsctp/usrsctplib/netinet/sctp_output.c: In function 'sctp_send_sack':
+/home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__usrsctp/usrsctplib/netinet/sctp_output.c:11500:17: warning: converting a packed 'struct sctp_gap_ack_block' pointer (alignment 1) to a 'uint32_t' {aka 'long unsigned int'} pointer (alignment 4) may result in an unaligned pointer value [-Waddress-of-packed-member]
+11500 |                 dup = (uint32_t *) gap_descriptor;
+      |                 ^~~
+/home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__usrsctp/usrsctplib/netinet/sctp_header.h:254:8: note: defined here
+  254 | struct sctp_gap_ack_block {
+      |        ^~~~~~~~~~~~~~~~~~
+/home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__usrsctp/usrsctplib/user_environment.c: In function 'read_random':
+/home/thien-gay/esp-idf/esp32-webRTC/managed_components/sepfy__usrsctp/usrsctplib/user_environment.c:292:17: warning: unused variable 'n' [-Wunused-variable]
+  292 |         ssize_t n;
+      |                 ^
