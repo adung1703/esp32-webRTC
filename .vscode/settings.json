@@ -7,6 +7,8 @@
         "stdio.h": "c",
         "string.h": "c",
         "md.h": "c",
-        "config.h": "c"
+        "config.h": "c",
+        "stun.h": "c",
+        "address.h": "c"
     }
 }
