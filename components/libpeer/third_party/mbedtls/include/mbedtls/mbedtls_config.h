@@ -11,7 +11,7 @@
  *  Copyright The Mbed TLS Contributors
  *  SPDX-License-Identifier: Apache-2.0
  *
- *  Licensed under the Apache License, Version 2.0 (the "License") you may
+ *  Licensed under the Apache License, Version 2.0 (the "License"); you may
  *  not use this file except in compliance with the License.
  *  You may obtain a copy of the License at
  *
@@ -218,7 +218,7 @@
  *
  * All these define require MBEDTLS_PLATFORM_C to be defined!
  *
- * \note MBEDTLS_PLATFORM_SNPRINTF_ALT is required on Windows
+ * \note MBEDTLS_PLATFORM_SNPRINTF_ALT is required on Windows;
  * it will be enabled automatically by check_config.h
  *
  * \warning MBEDTLS_PLATFORM_XXX_ALT cannot be defined at the same time as
@@ -688,7 +688,7 @@
  * #MBEDTLS_ERR_SSL_CRYPTO_IN_PROGRESS) and then be called later again in
  * order to further progress and eventually complete their operation. This is
  * controlled through mbedtls_ecp_set_max_ops() which limits the maximum
- * number of ECC operations a function may perform before pausing see
+ * number of ECC operations a function may perform before pausing; see
  * mbedtls_ecp_set_max_ops() for more information.
  *
  * This is useful in non-threaded environments if you want to avoid blocking
@@ -698,9 +698,9 @@
  * - Adds xxx_restartable() variants of existing operations in the
  *   following modules, with corresponding restart context types:
  *   - ECP (for Short Weierstrass curves only): scalar multiplication (mul),
- *     linear combination (muladd)
- *   - ECDSA: signature generation & verification
- *   - PK: signature generation & verification
+ *     linear combination (muladd);
+ *   - ECDSA: signature generation & verification;
+ *   - PK: signature generation & verification;
  *   - X509: certificate chain verification.
  * - Adds mbedtls_ecdh_enable_restart() in the ECDH module.
  * - Changes the behaviour of TLS 1.2 clients (not servers) when using the
@@ -708,8 +708,8 @@
  *   computations restartable:
  *   - ECDH operations from the key exchange, only for Short Weierstrass
  *     curves, only when MBEDTLS_USE_PSA_CRYPTO is not enabled.
- *   - verification of the server's key exchange signature
- *   - verification of the server's certificate chain
+ *   - verification of the server's key exchange signature;
+ *   - verification of the server's certificate chain;
  *   - generation of the client's signature if client authentication is used,
  *     with an ECC key/certificate.
  *
@@ -989,7 +989,7 @@
  * Enable the ECJPAKE based ciphersuite modes in SSL / TLS.
  *
  * \warning This is currently experimental. EC J-PAKE support is based on the
- * Thread v1.0.0 specification incompatible changes to the specification
+ * Thread v1.0.0 specification; incompatible changes to the specification
  * might still happen. For this reason, this is disabled by default.
  *
  * Requires: MBEDTLS_ECJPAKE_C
@@ -1254,8 +1254,8 @@
  * ```
  * psa_status_t mbedtls_psa_external_get_random(
  *     mbedtls_psa_external_random_context_t *context,
- *     uint8_t *output, size_t output_size, size_t *output_length)
- * )
+ *     uint8_t *output, size_t output_size, size_t *output_length);
+ * );
  * ```
  * The \c context value is initialized to 0 before the first call.
  * The function must fill the \c output buffer with \p output_size bytes
@@ -1788,7 +1788,7 @@
  *
  * Uncomment this to enable support for use_srtp extension.
  */
-#define MBEDTLS_SSL_DTLS_SRTP
+//#define MBEDTLS_SSL_DTLS_SRTP
 
 /**
  * \def MBEDTLS_SSL_DTLS_CLIENT_PORT_REUSE
@@ -1851,7 +1851,7 @@
  * This setting requires compiling with clang -fsanitize=memory. The test
  * suites can then be run normally.
  *
- * \warning This macro is only used for extended testing it is not considered
+ * \warning This macro is only used for extended testing; it is not considered
  * part of the library's API, so it may change or disappear at any time.
  *
  * Uncomment to enable testing of the constant-flow nature of selected code.
@@ -1870,7 +1870,7 @@
  * done for an individual test suite with 'valgrind ./test_suite_xxx', or when
  * using CMake, this can be done for all test suites with 'make memcheck'.
  *
- * \warning This macro is only used for extended testing it is not considered
+ * \warning This macro is only used for extended testing; it is not considered
  * part of the library's API, so it may change or disappear at any time.
  *
  * Uncomment to enable testing of the constant-flow nature of selected code.

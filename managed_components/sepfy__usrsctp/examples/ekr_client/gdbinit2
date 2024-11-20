@@ -1,5 +1,0 @@
-file ./build/ekr_client.elf
-target extended-remote :3333
-set remote hardware-watchpoint-limit 2
-set architecture xtensa
-maintenance flush register-cache
