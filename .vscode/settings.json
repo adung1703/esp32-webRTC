@@ -9,6 +9,8 @@
         "md.h": "c",
         "config.h": "c",
         "stun.h": "c",
-        "address.h": "c"
+        "address.h": "c",
+        "cjson.h": "c",
+        "assert.h": "c"
     }
 }
