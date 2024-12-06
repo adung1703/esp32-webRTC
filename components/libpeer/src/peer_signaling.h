@@ -34,11 +34,11 @@ typedef struct ServiceConfiguration {
 
 void peer_signaling_set_config(ServiceConfiguration* config);
 
-int peer_signaling_whip_connect();
+// int peer_signaling_whip_connect();
 
-void peer_signaling_whip_disconnect();
+// void peer_signaling_whip_disconnect();
 
-int peer_signaling_join_channel();
+// int peer_signaling_join_channel();
 
 void peer_signaling_leave_channel();
 

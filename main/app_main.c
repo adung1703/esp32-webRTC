@@ -128,7 +128,7 @@ void app_main(void) {
   service_config.pc = g_pc;
   service_config.mqtt_url = "broker.emqx.io";
   peer_signaling_set_config(&service_config);
-  peer_signaling_join_channel();
+  // peer_signaling_join_channel();
 
 #if defined(CONFIG_ESP32S3_XIAO_SENSE)
   StackType_t* stack_memory = (StackType_t*)heap_caps_malloc(8192 * sizeof(StackType_t), MALLOC_CAP_SPIRAM);
@@ -145,8 +145,8 @@ void app_main(void) {
   ESP_LOGI(TAG, "[APP] Free memory: %d bytes", esp_get_free_heap_size());
   ESP_LOGI(TAG, "open https://sepfy.github.io/webrtc?deviceId=%s", deviceid);
 
-  while (1) {
+  // while (1) {
     peer_signaling_loop();
-    vTaskDelay(pdMS_TO_TICKS(10));
-  }
+  //   vTaskDelay(pdMS_TO_TICKS(10));
+  // }
 }

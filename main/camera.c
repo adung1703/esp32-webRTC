@@ -58,8 +58,8 @@ static camera_config_t camera_config = {
     .pin_reset = CAM_PIN_RESET,
     .xclk_freq_hz = 20000000,
     .pixel_format = PIXFORMAT_JPEG,
-    .frame_size = FRAMESIZE_VGA,
-    .jpeg_quality = 10,
+    .frame_size = FRAMESIZE_QVGA,
+    .jpeg_quality = 20,
     .fb_count = 2,
     .fb_location = CAMERA_FB_IN_PSRAM,
     .grab_mode = CAMERA_GRAB_WHEN_EMPTY};
@@ -94,7 +94,7 @@ void camera_task(void* pvParameters) {
         ESP_LOGE(TAG, "Camera capture failed");
       }
 
-      // ESP_LOGI(TAG, "Camera captured. size=%zu, timestamp=%llu", fb->len, fb->timestamp);
+      ESP_LOGI(TAG, "Camera captured. size=%zu, timestamp=%llu", fb->len, fb->timestamp);
       if (xSemaphoreTake(xSemaphore, portMAX_DELAY)) {
         peer_connection_datachannel_send(g_pc, (char*)fb->buf, fb->len);
         xSemaphoreGive(xSemaphore);
